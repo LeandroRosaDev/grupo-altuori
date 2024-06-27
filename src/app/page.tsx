@@ -1,113 +1,206 @@
-import Image from "next/image";
-
+import Link from "next/link";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <section
+        id="banner principal"
+        className="bg-[url('/assets/bg/1.png')] h-[1000px]"
+      >
+        <div>
+          <h1>O FUTURO DA SUA EMPRESA COMEÇA AQUI</h1>
+          <p>
+            TRANSFORMANDO VISÕES EM REALIDADE: SEU NEGÓCIO NO ÁPICE DO SUCESSO
+          </p>
+          <div>
+            <Link href="">SAIBA MAIS</Link>
+            <Link href="">CONTATO</Link>
+          </div>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      </section>
+      <section id="sobre">
+        <div>
+          <div>
+            <h1>NOSSA HISTÓRIA</h1>
+            <p>
+              Desde o nosso início em 2020, o Grupo Altuori se dedica a elevar a
+              gestão empresarial a novos patamares. Nossa expertise abrange uma
+              gama completa de serviços estratégicos, incluindo análise de
+              mercado detalhada, automação de processos para maximizar a
+              eficiência, e estratégias de marketing e branding que não apenas
+              destacam sua marca, mas também criam conexões significativas com
+              seu público. Nos aventuramos além, integrando mídias digitais para
+              amplificar sua presença online, implementando práticas de gestão
+              financeira sólidas para assegurar a sustentabilidade e
+              crescimento, e adotando medidas de sustentabilidade empresarial
+              que preparam seu negócio para um futuro responsável. Nosso
+              compromisso vai além de simplesmente prestar serviços; buscamos
+              ser parceiros na jornada de transformação do seu negócio.
+              Acreditamos que, com a orientação correta e estratégias
+              personalizadas, cada empresa tem o potencial para alcançar a
+              excelência e deixar uma marca indelével em seu setor. O Grupo
+              Altuori não apenas aspira a ser uma parte dessa trajetória, mas se
+              dedica a tornar cada história de sucesso uma prova viva de nosso
+              compromisso com a excelência. Venha descobrir como podemos
+              transformar sua visão em realidade, guiando sua empresa para um
+              futuro de sucesso inigualável.
+            </p>
+          </div>
+          <div>
+            <div>
+              <img
+                src="/assets/img/17.png"
+                alt="Imagem de uma sala de reunião"
+              />
+              <h1>OTIMIZAÇÃO DE PROCESSOS</h1>
+              <p>
+                O Grupo Altuori é pioneiro em otimização de processos,
+                transformando complexidade em eficiência. Nossa abordagem
+                inovadora impulsiona empresas ao sucesso, refletindo nossa
+                paixão e comprometimento com a excelência operacional.
+              </p>
+            </div>
+            <div>
+              <img
+                src="/assets/img/18.png"
+                alt="Imagem de uma mesa com gráficos"
+              />
+              <h1>ANÁLISE DE MERCADO E EXPANSÃO</h1>
+              <p>
+                Especialistas em análise de mercado, o Grupo Altuori guia
+                empresas à expansão ano após ano. Nossa perícia desvenda
+                caminhos para crescimento, alavancando cada oportunidade com
+                precisão estratégica.
+              </p>
+            </div>
+            <div>
+              <img
+                src="/assets/img/19.png"
+                alt="Imagem de um quadro com informações"
+              />
+              <h1>MARKETING E BRANDING</h1>
+              <p>
+                No Grupo Altuori, combinamos marketing e branding para
+                posicionar marcas no topo. Nossa criatividade e estratégia
+                transformam visibilidade em legado e geram valor para a sua
+                empresa, trazendo reconhecimento para a sua marca.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="cta" className="bg-[url('/assets/bg/2.png')] h-[500px]">
+        <div>
+          <h1>
+            NÃO PERCA A OPORTUNIDADE DE ELEVAR A SUA EMPRESA PARA OUTRO NÍVEL
+            COM NOSSAS ESTRATÉGIAS E FERRAMENTAS DE GESTÃO
+          </h1>
+          <Link href="">FALE CONOSCO</Link>
+        </div>
+      </section>
+      <section id="vantagens">
+        <div>
+          <div>
+            <h1>NOSSA SERVIÇOS</h1>
+            <p>
+              Descubra como nossas soluções personalizadas em análise de
+              mercado, otimização de processos, marketing, branding, e mais,
+              podem transformar a sua empresa. No Grupo Altuori, combinamos
+              inovação com eficácia para impulsionar o seu sucesso.
+            </p>
+          </div>
+          <div>
+            <div>
+              <img src="/assets/img/1.png" alt="Imagem alusiva ao texto" />
+              <p>
+                Este é um exemplo do texto que vai aparecer quando passar o
+                mouse em cima, o texto está no site original
+              </p>
+            </div>
+            <div>
+              <img src="/assets/img/2.png" alt="Imagem alusiva ao texto" />
+              <p>
+                Este é um exemplo do texto que vai aparecer quando passar o
+                mouse em cima, o texto está no site original
+              </p>
+            </div>
+            <div>
+              <img src="/assets/img/3.png" alt="Imagem alusiva ao texto" />
+              <p>
+                Este é um exemplo do texto que vai aparecer quando passar o
+                mouse em cima, o texto está no site original
+              </p>
+            </div>
+            <div>
+              <img src="/assets/img/4.png" alt="Imagem alusiva ao texto" />
+              <p>
+                Este é um exemplo do texto que vai aparecer quando passar o
+                mouse em cima, o texto está no site original
+              </p>
+            </div>
+            <div>
+              <img src="/assets/img/5.png" alt="Imagem alusiva ao texto" />
+              <p>
+                Este é um exemplo do texto que vai aparecer quando passar o
+                mouse em cima, o texto está no site original
+              </p>
+            </div>
+            <div>
+              <img src="/assets/img/6.png" alt="Imagem alusiva ao texto" />
+              <p>
+                Este é um exemplo do texto que vai aparecer quando passar o
+                mouse em cima, o texto está no site original
+              </p>
+            </div>
+            <div>
+              <img src="/assets/img/7.png" alt="Imagem alusiva ao texto" />
+              <p>
+                Este é um exemplo do texto que vai aparecer quando passar o
+                mouse em cima, o texto está no site original
+              </p>
+            </div>
+            <div>
+              <img src="/assets/img/8.png" alt="Imagem alusiva ao texto" />
+              <p>
+                Este é um exemplo do texto que vai aparecer quando passar o
+                mouse em cima, o texto está no site original
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contato" className="bg-[url('/assets/bg/3.png')] h-[500px]">
+        <div>
+          <div>
+            <h1>UMA EQUIPE DE ESPECIALISTAS PRONTAS PARA TE ATENDER.</h1>
+            <p>
+              Confie a administração da sua empresa com quem entende do assunto.
+            </p>
+          </div>
+          <div>
+            <img
+              src="/assets/icones/7.svg"
+              alt="Icone de uma mensagem alusivo a um bate papo"
+            />
+            <img
+              src="/assets/icones/9.svg"
+              alt="Icone de um telefone alusivo a uma  ligação"
+            />
+            <img
+              src="/assets/icones/8.svg"
+              alt="Icone de uma mensagem alusivo a um e-mail"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="Mapa">
+        <div>
+          <h1>ONDE ESTAMOS</h1>
+          <img
+            src="/assets/bg/4.png"
+            alt="Aqui está uma imagem de um mapa que deverá ser subistituido pelo mapa do google mesmo"
+          />
+        </div>
+      </section>
     </main>
   );
 }
