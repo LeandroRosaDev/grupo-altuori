@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <header className="">
+    <footer className="">
       <div>
         <div>
           <div>
@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
           <p>54.251.497 BEATRIZ HENRIQUES DIAS</p>
         </div>
       </div>
-    </header>
+    </footer>
   );
 };
 
