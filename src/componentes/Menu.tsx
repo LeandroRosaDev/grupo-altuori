@@ -24,27 +24,33 @@ const Menu: React.FC = () => {
         />
         <nav>
           <ul
-            className={`hidden md:flex space-x-4 md:space-x-8 text-white text-sm md:text-lg font-semibold ${
+            className={`hidden md:flex space-x-4 md:space-x-8 text-white text-sm md:text-lg font-medium ${
               menuOpen ? 'hidden' : 'flex'
             }`}
           >
             <li>
-              <Link href="/" className="hover:text-gray-300 transition">
+              <Link href="/" className="hover:text-orange-600 transition">
                 HOME
               </Link>
             </li>
             <li>
-              <Link href="#sobre" className="hover:text-gray-300 transition">
+              <Link href="#sobre" className="hover:text-orange-600 transition">
                 SOBRE
               </Link>
             </li>
             <li>
-              <Link href="#servicos" className="hover:text-gray-300 transition">
+              <Link
+                href="#servicos"
+                className="hover:text-orange-600 transition"
+              >
                 SERVIÇOS
               </Link>
             </li>
             <li>
-              <Link href="#contato" className="hover:text-gray-300 transition">
+              <Link
+                href="#contato"
+                className="hover:text-orange-600 transition"
+              >
                 CONTATO
               </Link>
             </li>
